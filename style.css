@@ -323,6 +323,91 @@ button:hover {
     font-size: 13px;
 }
 
+/* AWS Deployment */
+
+.aws-deployment {
+    margin-top: 80px;
+
+    background: white;
+
+    border: 1px solid #e6e9ef;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.aws-icon {
+    font-size: 55px;
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #fff3e0;
+
+    border-radius: 18px;
+
+    flex-shrink: 0;
+}
+
+.deployment-content h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.deployment-content p:not(.eyebrow) {
+    color: #667085;
+
+    max-width: 700px;
+
+    margin-bottom: 18px;
+}
+
+.live-link {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #ff9900;
+
+    color: #111827;
+
+    font-weight: 700;
+
+    padding: 12px 18px;
+
+    border-radius: 9px;
+}
+
+.live-link:hover {
+    background: #ec8b00;
+}
+
+
+@media (max-width: 600px) {
+
+    .aws-deployment {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
 
 /* About */
 

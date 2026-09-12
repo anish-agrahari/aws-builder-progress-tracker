@@ -76,6 +76,20 @@
 
             <div id="skillsContainer" class="skills-grid"></div>
 
+            <div class="add-skill">
+
+    <input
+        type="text"
+        id="skillInput"
+        placeholder="Enter a new AWS skill..."
+    >
+
+    <button onclick="addSkill()">
+        + Add Skill
+    </button>
+
+</div>
+
         </section>
 
 
@@ -110,22 +124,60 @@
         </section>
 
 
-        <!-- About Section -->
-        <section class="about">
+        <!-- AWS Deployment Section -->
+<section class="aws-deployment">
 
-            <p class="eyebrow">ABOUT THIS PROJECT</p>
+    <div class="aws-icon">
+        ☁️
+    </div>
 
-            <h2>
-                Built for the AWS Builder community.
-            </h2>
+    <div class="deployment-content">
 
-            <p>
-                This project was created as part of the
-                Weekend Deployment Challenge to learn,
-                build, and deploy an application on AWS.
-            </p>
+        <p class="eyebrow">
+            AWS DEPLOYMENT
+        </p>
 
-        </section>
+        <h2>
+            Deployed on AWS Amplify
+        </h2>
+
+        <p>
+            This application is hosted using AWS Amplify
+            Hosting and connected to GitHub for automatic
+            deployments whenever new changes are pushed.
+        </p>
+
+        <a
+            href="https://main.d2gponmnqb81sa.amplifyapp.com/"
+            target="_blank"
+            class="live-link"
+        >
+            Open Live Application ↗
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section class="about">
+
+    <p class="eyebrow">
+        ABOUT THIS PROJECT
+    </p>
+
+    <h2>
+        Built for the AWS Builder community.
+    </h2>
+
+    <p>
+        This project was created as part of the
+        Weekend Deployment Challenge to learn,
+        build, and deploy an application on AWS.
+    </p>
+
+</section>
 
     </main>
 

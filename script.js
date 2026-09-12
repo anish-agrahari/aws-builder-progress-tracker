@@ -192,6 +192,57 @@ function updateProgress() {
         message;
 }
 
+// ---------- Add Skill ----------
+
+function addSkill() {
+
+    const input =
+        document.getElementById("skillInput");
+
+    const name =
+        input.value.trim();
+
+    // Don't add empty skills
+    if (!name) {
+        return;
+    }
+
+    // Prevent duplicate skills
+    const alreadyExists =
+        skills.some(
+            skill =>
+                skill.name.toLowerCase() ===
+                name.toLowerCase()
+        );
+
+    if (alreadyExists) {
+
+        alert("This skill already exists.");
+
+        return;
+    }
+
+    // Add new skill
+    skills.push({
+
+        name: name,
+
+        completed: false
+
+    });
+
+    // Save to Local Storage
+    saveSkills();
+
+    // Clear input
+    input.value = "";
+
+    // Update UI
+    renderSkills();
+
+    updateProgress();
+}
+
 
 // ---------- Projects ----------
 

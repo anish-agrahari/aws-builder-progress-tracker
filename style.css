@@ -409,6 +409,43 @@ button:hover {
 
 }
 
+/* Add Skill */
+
+.add-skill {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.add-skill input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #d5dae3;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.add-skill input:focus {
+    border-color: #ff9900;
+}
+
+
+@media (max-width: 600px) {
+
+    .add-skill {
+        flex-direction: column;
+    }
+
+}
+
 /* About */
 
 .about {

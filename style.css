@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e9ef;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.challenge-badge {
+    font-size: 13px;
+    background: #fff3e0;
+    color: #b45309;
+
+    padding: 8px 14px;
+    border-radius: 20px;
+
+    font-weight: 600;
+}
+
+
+/* Main */
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+
+/* Hero */
+
+.hero {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 50px;
+    align-items: center;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #667085;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 600px;
+    font-size: 18px;
+    color: #667085;
+}
+
+
+/* Progress Card */
+
+.progress-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.progress-header strong {
+    font-size: 28px;
+}
+
+.progress-bar {
+    height: 12px;
+
+    background: #e9edf3;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+
+    background: #ff9900;
+
+    transition: width 0.4s ease;
+}
+
+#progressText {
+    margin-top: 15px;
+    color: #667085;
+}
+
+
+/* Sections */
+
+.section {
+    margin-top: 80px;
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+}
+
+#skillCount {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* Skills */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+
+    padding: 20px;
+
+    border: 1px solid #e6e9ef;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.skill.completed {
+    border-color: #ff9900;
+}
+
+.skill-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed .checkbox {
+    background: #ff9900;
+
+    border-color: #ff9900;
+
+    color: white;
+}
+
+.skill-name {
+    font-weight: 600;
+}
+
+
+/* Projects */
+
+.add-project {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.add-project input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #d5dae3;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.add-project input:focus {
+    border-color: #ff9900;
+}
+
+button {
+    border: none;
+
+    background: #ff9900;
+
+    color: #111827;
+
+    font-weight: 700;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ec8b00;
+}
+
+
+/* Project cards */
+
+.projects-list {
+    display: grid;
+
+    gap: 12px;
+}
+
+.project {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e6e9ef;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.project-status {
+    font-size: 12px;
+
+    background: #e8f7ee;
+
+    color: #16803c;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+}
+
+.delete-btn {
+    background: transparent;
+
+    color: #ef4444;
+
+    padding: 5px 10px;
+
+    font-size: 13px;
+}
+
+
+/* About */
+
+.about {
+    margin-top: 80px;
+
+    padding: 40px;
+
+    background: #172033;
+
+    color: white;
+
+    border-radius: 20px;
+}
+
+.about .eyebrow {
+    color: #cbd5e1;
+}
+
+.about h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.about p:last-child {
+    color: #cbd5e1;
+
+    max-width: 700px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 80px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-top: 1px solid #e6e9ef;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-left: 6%;
+    padding-right: 6%;
+
+    color: #667085;
+}
+
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .challenge-badge {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        margin-top: 45px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .section {
+        margin-top: 55px;
+    }
+
+    .add-project {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}

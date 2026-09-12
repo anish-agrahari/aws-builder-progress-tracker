@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Builder Progress Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            🚀 AWS Builder
+        </div>
+
+        <div class="challenge-badge">
+            Weekend Deployment Challenge
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div>
+                <p class="eyebrow">MY AWS JOURNEY</p>
+
+                <h1>
+                    AWS Builder<br>
+                    Progress Tracker
+                </h1>
+
+                <p class="hero-text">
+                    Track your AWS learning goals, projects,
+                    and deployment journey in one simple dashboard.
+                </p>
+            </div>
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+                    <span>Overall Progress</span>
+                    <strong id="progressPercentage">0%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+
+                <p id="progressText">
+                    Start your AWS journey 🚀
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LEARNING</p>
+                    <h2>AWS Skills</h2>
+                </div>
+
+                <span id="skillCount">0 / 0 completed</span>
+            </div>
+
+
+            <div id="skillsContainer" class="skills-grid"></div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">BUILD</p>
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+
+
+            <div class="add-project">
+
+                <input
+                    type="text"
+                    id="projectInput"
+                    placeholder="Enter a project name..."
+                >
+
+                <button onclick="addProject()">
+                    + Add Project
+                </button>
+
+            </div>
+
+
+            <div id="projectsContainer" class="projects-list"></div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about">
+
+            <p class="eyebrow">ABOUT THIS PROJECT</p>
+
+            <h2>
+                Built for the AWS Builder community.
+            </h2>
+
+            <p>
+                This project was created as part of the
+                Weekend Deployment Challenge to learn,
+                build, and deploy an application on AWS.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Built with ❤️ and AWS
+        </p>
+
+        <p>
+            #deployment
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
